@@ -1,33 +1,31 @@
 <template>
   <nav>
     <ol class="flex items-center gap-x-20">
-      <li v-for="item in menu.slice(0, 3)" :key="item.name">
-        <a
-          href="#"
-          class="text-2xl capitalize ease-out duration-700 hover:text-[#00A3FF]"
-          >{{ item.name }}</a
-        >
-      </li>
-      <li v-for="item in menu.slice(-1)" :key="item.name">
-        <a
-          href="#"
-          class="text-2xl capitalize py-3 px-4 border-2 rounded-full border-white ease-out duration-700 hover:text-[#00A3FF] hover:border-[#00A3FF]"
-          >{{ item.name }}</a
-        >
-      </li>
+      <MenuItem
+        v-for="item in menu"
+        :key="item.name"
+        :name="item.name"
+        :login="item.login"
+      />
     </ol>
   </nav>
 </template>
 
 <script>
+import MenuItem from "./MenuItem.vue";
+
 export default {
+  components: {
+    MenuItem,
+  },
+
   data() {
     return {
       menu: [
         { name: "discover" },
         { name: "quiz" },
         { name: "about" },
-        { name: "sign up" },
+        { name: "sign up", login: true },
       ],
     };
   },
