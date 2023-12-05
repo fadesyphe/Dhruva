@@ -2,13 +2,7 @@
   <div
     class="w-full max-w-[100rem] mx-auto flex items-center justify-between py-12"
   >
-    <a href="/">
-      <BaseIcon
-        name="logo"
-        viewBox="0 0 228 73"
-        class="w-[14.25rem] h-[4.5625rem]"
-      />
-    </a>
+    <TheLogo />
     <nav>
       <ol class="flex items-center gap-x-20">
         <li v-for="item in menu.slice(0, 3)" :key="item.name">
@@ -31,10 +25,10 @@
 </template>
 
 <script>
-import BaseIcon from "./BaseIcon.vue";
+import TheLogo from "./TheLogo.vue";
 export default {
   components: {
-    BaseIcon,
+    TheLogo,
   },
 
   data() {
