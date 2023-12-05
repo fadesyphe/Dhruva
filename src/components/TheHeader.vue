@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-full max-w-[100rem] mx-auto flex items-center justify-between py-12"
-  >
+  <div class="flex items-center justify-between py-12">
     <TheLogo />
     <TheMenu />
   </div>
