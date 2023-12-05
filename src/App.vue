@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-main-1 bg-cover text-white">
+  <div class="w-screen h-screen bg-main-1 bg-cover text-white overflow-hidden">
     <div class="w-full max-w-[100rem] mx-auto">
       <TheHeader />
       <TheMain />
