@@ -12,6 +12,11 @@ module.exports = {
 				'main-3': "url('./assets/images/main-bg-3.png')",
 				'additional': "url('./assets/images/additional-pages.png')",
 				'authorize': "url('./assets/images/sign-up-pages.png')"
+			},
+
+			gradientColorStopPositions: {
+				'0.4': 'rgba(244, 244, 244, 0.4)',
+				'0.2': 'rgba(244, 244, 244, 0.2)'
 			}
 		},
 	},
