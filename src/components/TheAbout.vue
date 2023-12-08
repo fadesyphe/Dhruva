@@ -1,25 +1,29 @@
 <template>
   <div
-    class="w-screen h-screen bg-main-1 bg-[length:100%_100%] bg-no-repeat text-white overflow-hidden"
+    class="w-screen h-screen bg-main-3 bg-[length:100%_100%] text-white overflow-hidden"
   >
     <div class="w-full max-w-[100rem] mx-auto">
       <TheHeader />
-      <TheMain path="two">
-        <TheMainContentOne />
+      <TheMain>
+        <TheAboutContent />
       </TheMain>
     </div>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from "./TheHeader.vue";
 import TheMain from "./TheMain.vue";
-import TheMainContentOne from "./TheMainContentOne";
+import TheAboutContent from "./TheAboutContent.vue";
+import TheFooter from "./TheFooter.vue";
+
 export default {
   components: {
     TheHeader,
     TheMain,
-    TheMainContentOne,
+    TheAboutContent,
+    TheFooter,
   },
 };
 </script>

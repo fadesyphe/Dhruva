@@ -1,6 +1,6 @@
 <template>
-  <div class="font-black text-sm tracking-[0.4em] mt-28">
-    <router-link :to="`/${path}`" :class="classes">
+  <div class="font-black text-sm tracking-[0.4em] mt-24 mb-16">
+    <router-link v-if="path" :to="`/${path}`" :class="classes">
       <span class="rotate-90 inline-block">Scroll</span>
       <BaseIcon name="arrow" class="w-2 h-[3.25rem]" viewBox="0 0 8 52" />
     </router-link>

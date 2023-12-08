@@ -1,9 +1,11 @@
 <template>
-  <div class="w-screen h-screen bg-main-2 bg-cover text-white overflow-hidden">
+  <div
+    class="w-screen h-screen bg-main-1 bg-[length:100%_100%] bg-no-repeat text-white overflow-hidden"
+  >
     <div class="w-full max-w-[100rem] mx-auto">
       <TheHeader />
-      <TheMain path="three">
-        <TheMainContentTwo />
+      <TheMain path="contact">
+        <TheDiscoverContent />
       </TheMain>
     </div>
   </div>
@@ -12,13 +14,12 @@
 <script>
 import TheHeader from "./TheHeader.vue";
 import TheMain from "./TheMain.vue";
-import TheMainContentTwo from "./TheMainContentTwo.vue";
-
+import TheDiscoverContent from "./TheDiscoverContent";
 export default {
   components: {
     TheHeader,
     TheMain,
-    TheMainContentTwo,
+    TheDiscoverContent,
   },
 };
 </script>
