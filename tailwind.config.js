@@ -11,7 +11,7 @@ module.exports = {
 				'main-2': "url('./assets/images/main-bg-2.png')",
 				'main-3': "url('./assets/images/main-bg-3.png')",
 				'additional': "url('./assets/images/additional-pages.png')",
-				'sign-up': "url('./assets/images/sign-up-pages.png')"
+				'authorize': "url('./assets/images/sign-up-pages.png')"
 			}
 		},
 	},
